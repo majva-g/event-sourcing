@@ -2,6 +2,7 @@
 
 namespace Domain\User;
 
+use Database\Factories\UserFactory;
 use Domain\Customer\Customer;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasOne;
@@ -31,5 +32,10 @@ class User extends Authenticatable
     public function customer(): HasOne
     {
         return $this->hasOne(Customer::class);
+    }
+
+    public static function newFactory(): UserFactory
+    {
+        return UserFactory::new();
     }
 }
