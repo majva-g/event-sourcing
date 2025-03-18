@@ -9,7 +9,7 @@ class CartInitialized extends ShouldBeStored
 {
     public function __construct(
         public string $cartUuid,
-        public string $customerUuid,
+        //public string $customerUuid,
         public Carbon $date
     ) { }
 }
