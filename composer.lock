@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8dca5ea0a23951b27d8439f17935a54b",
+    "content-hash": "642ee456a0d7e72e95a84e0e58d4d54d",
     "packages": [
         {
             "name": "brick/math",
@@ -6750,6 +6750,73 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "akrillia/laravel-beyond",
+            "version": "7.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AkrilliA/laravel-beyond.git",
+                "reference": "9c096f7818c9938b21d9a075adeadcc82e607074"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AkrilliA/laravel-beyond/zipball/9c096f7818c9938b21d9a075adeadcc82e607074",
+                "reference": "9c096f7818c9938b21d9a075adeadcc82e607074",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "^8.2",
+                "illuminate/console": "^11.0|^12.0",
+                "illuminate/filesystem": "^11.0|^12.0",
+                "illuminate/support": "^11.0|^12.0",
+                "laravel/prompts": "^v0.3.5",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "laravel/pint": "^v1.21",
+                "orchestra/testbench": "^9.1|^10.1",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^v11.0",
+                "spatie/laravel-data": "^4.13",
+                "spatie/laravel-query-builder": "^6.3.1",
+                "spatie/laravel-queueable-action": "^2.16"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AkrilliA\\LaravelBeyond\\LaravelBeyondServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "AkrilliA\\LaravelBeyond\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Jonas Regner",
+                    "email": "regnerjonas@protonmail.com"
+                },
+                {
+                    "name": "Alexander Gaal",
+                    "email": "alexander.gaal@gipfel.dev"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/AkrilliA/laravel-beyond/issues",
+                "source": "https://github.com/AkrilliA/laravel-beyond/tree/v7.1.0"
+            },
+            "time": "2025-03-10T07:45:44+00:00"
+        },
         {
             "name": "fakerphp/faker",
             "version": "v1.24.1",
